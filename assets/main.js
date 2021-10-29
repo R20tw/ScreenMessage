@@ -153,8 +153,8 @@ function mode(modeName) {
 }
 
 // ScreenMessage
-function adjust() {
-
+async function adjust() {
+    await new Promise(_ => setTimeout(_,300));
     test = document.getElementById("test");
 
     test.textContent = textarea.value;
